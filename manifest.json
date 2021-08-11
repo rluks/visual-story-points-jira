@@ -9,5 +9,10 @@
           "css": ["style.css"],
           "js": ["content-script.js"]
         }
-      ]
+    ],
+      "icons": {
+        "128": "icon-128.png",
+        "32": "icon-32.png",
+        "16": "icon-16.png"
+      }
   }
