@@ -5,12 +5,15 @@
     "manifest_version": 3,
     "content_scripts": [
         {
-          "matches": ["https://issues.redhat.com/*"],
+          "matches": ["<all_urls>"],
           "css": ["style.css"],
-          "js": ["content-script.js"]
+          "js": [
+            "inject.js",
+            "content.js"
+          ]
         }
     ],
-      "icons": {
+    "icons": {
         "128": "icon-128.png",
         "32": "icon-32.png",
         "16": "icon-16.png"
