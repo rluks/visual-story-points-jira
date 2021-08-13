@@ -18,8 +18,9 @@ function InjectStoryPoints(node, headingNode){
 
     var containerEL = document.createElement("div");
     containerEL.setAttribute("id", "visual-sps-jira");
-    containerEL.style.width = '100%';
-    containerEL.style.textAlign = 'center';
+    containerEL.classList.add("visual-story-points-jira");
+    //containerEL.style.width = '100%';
+    //containerEL.style.textAlign = 'center';
 
     headingNode.parentNode.insertBefore(containerEL, headingNode.nextSibling);
 
@@ -31,7 +32,7 @@ function InjectStoryPoints(node, headingNode){
     small.onclick = function () {
         inputEl.value = mouseSP;
     };
-    document.getElementById("visual-sps-jira").appendChild(small);
+    containerEL.appendChild(small);
 
     var medium = document.createElement("button");
     var mediumTxt = document.createTextNode("🐱(" + catSP + ")");
@@ -41,7 +42,7 @@ function InjectStoryPoints(node, headingNode){
     medium.onclick = function () {
         inputEl.value = catSP;
     };
-    document.getElementById("visual-sps-jira").appendChild(medium);
+    containerEL.appendChild(medium);
 
     var big = document.createElement("button");
     var bigTxt = document.createTextNode("🐶(" + dogSP + ")");
@@ -52,7 +53,7 @@ function InjectStoryPoints(node, headingNode){
         inputEl.value = dogSP;
         //TODO highlight input field
     };
-    document.getElementById("visual-sps-jira").appendChild(big);
+    containerEL.appendChild(big);
 }
 
 globalThis.InjectStoryPoints = InjectStoryPoints;
