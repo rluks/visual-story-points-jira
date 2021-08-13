@@ -1,15 +1,20 @@
 "use strict";
 
-var node = document.getElementById('modal-field-view');
-node.childNodes.forEach((childNode) => {
-    if(childNode.className === 'jira-dialog-heading'){
-        if(childNode.textContent.includes("Edit Story Points for")){
-            //console.log("It's a dialogue window for editing story points!");
-            //console.log(childNode);
-            globalThis.InjectStoryPoints(node, childNode);
+function Test(){
+    var node = document.getElementById('modal-field-view');
+    node.childNodes.forEach((childNode) => {
+        if(childNode.className === 'jira-dialog-heading'){
+            if(childNode.textContent.includes("Edit Story Points for")){
+                //console.log("It's a dialogue window for editing story points!");
+                //console.log(childNode);
+                globalThis.InjectStoryPoints(node, childNode);
+            }
         }
-    }
-});
+    });
+}
+
+setTimeout(Test, 1000);
+
 
 /*
 // Select the node that will be observed for mutations
