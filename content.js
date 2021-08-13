@@ -13,7 +13,7 @@ function Test(){
     });
 }
 
-setTimeout(Test, 1000);
+setTimeout(Test, 400);
 
 
 /*
