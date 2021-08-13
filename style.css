@@ -7,7 +7,12 @@
     text-align: center;
 }
 
-.visual-story-points-jira-button {
+.vspj-button {
     height: var(--btn-height);
     font-size: large;
 }
+
+.vspj-img{
+    height: 50%;
+}
+

@@ -17,5 +17,11 @@
         "128": "icon-128.png",
         "32": "icon-32.png",
         "16": "icon-16.png"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": [ "img/*.png"],
+        "matches": [ "<all_urls>" ]
       }
+    ]
   }
