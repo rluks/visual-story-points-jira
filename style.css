@@ -1,4 +1,13 @@
+:root {
+    --btn-height: 105px;
+  }
+
 .visual-story-points-jira {
     width: 100%;
     text-align: center;
+}
+
+.visual-story-points-jira-button {
+    height: var(--btn-height);
+    font-size: large;
 }
