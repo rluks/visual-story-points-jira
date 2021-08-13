@@ -1,11 +1,11 @@
 {
     "name": "Visual Story Points for Jira",
     "description": "Relative estimates can be fun!",
-    "version": "0.1",
+    "version": "0.1.1",
     "manifest_version": 3,
     "content_scripts": [
         {
-          "matches": ["<all_urls>"],
+          "matches": ["https://issues.redhat.com/*"],
           "css": ["style.css"],
           "js": [
             "inject.js",
@@ -21,7 +21,7 @@
     "web_accessible_resources": [
       {
         "resources": [ "img/*.png"],
-        "matches": [ "<all_urls>" ]
+        "matches": [ "https://issues.redhat.com/*" ]
       }
     ]
   }

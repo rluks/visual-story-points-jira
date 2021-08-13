@@ -1,5 +1,6 @@
 "use strict";
 
+/*
 function Test(){
     var node = document.getElementById('modal-field-view');
     node.childNodes.forEach((childNode) => {
@@ -14,9 +15,9 @@ function Test(){
 }
 
 setTimeout(Test, 400);
+*/
 
 
-/*
 // Select the node that will be observed for mutations
 const targetNode = document.getElementById('jira');
 
@@ -51,6 +52,6 @@ const observer = new MutationObserver(callback);
 
 // Start observing the target node for configured mutations
 observer.observe(targetNode, config);
-*/
+
 
 
