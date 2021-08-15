@@ -26,9 +26,12 @@ function InjectStoryPoints(node, headingNode){
     Object.entries(animals).forEach(([key, value]) => {
 
         var button = document.createElement("button");
-        var txtEl = document.createTextNode(value.icon + "(" + key + ")");
+        var txtNode = document.createTextNode(value.icon + "(" + key + ")");
+        var txtEl = document.createElement("p");
+        txtEl.classList.add("vspj-btn-txt");
+        txtEl.appendChild(txtNode);
 
-        button.classList.add("vspj-button", "button");
+        button.classList.add("vspj-button", "button", "hvr-bob");
         button.appendChild(txtEl);
         button.onclick = function () {
             inputEl.value = key;
