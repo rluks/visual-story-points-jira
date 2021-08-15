@@ -1,7 +1,7 @@
 {
     "name": "Visual Story Points for Jira",
     "description": "Relative estimates can be fun!",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "manifest_version": 3,
     "content_scripts": [
         {
