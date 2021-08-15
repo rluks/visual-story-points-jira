@@ -8,6 +8,10 @@ function InjectStoryPoints(node, headingNode){
             img: "img/mouse.png"
         },
         2: {
+            icon: "🐰",
+            img: "img/bunny.png"
+        },
+        3: {
             icon: "🐱",
             img: "img/cat.png"
         },
