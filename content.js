@@ -7,8 +7,6 @@ function Test(){
     node.childNodes.forEach((childNode) => {
         if(childNode.className === 'jira-dialog-heading'){
             if(childNode.textContent.includes("Edit Story Points for")){
-                //console.log("It's a dialogue window for editing story points!");
-                //console.log(childNode);
                 globalThis.InjectStoryPoints(node, childNode);
             }
         }
@@ -32,10 +30,8 @@ if(window.location.href === testURL){
                 mutation.addedNodes.forEach( (node) => {
                 if(node.id === 'modal-field-view'){
                     node.childNodes.forEach((childNode) => {
-                        if(childNode.className === 'jira-dialog-heading'){
+                        if(childNode.classList.contains('jira-dialog-heading')){
                             if(childNode.textContent.includes("Edit Story Points for")){
-                                //console.log("It's a dialogue window for editing story points!");
-                                //console.log(childNode);
                                 InjectStoryPoints(node, childNode);
                             }
                         }
